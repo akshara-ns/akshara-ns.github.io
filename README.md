@@ -1,16 +1,64 @@
-# React + Vite
+# akshara-ns.github.io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site. Live at **https://akshara-ns.github.io**.
 
-Currently, two official plugins are available:
+Built with React 19, Vite, and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Running locally
 
-## React Compiler
+```bash
+npm install
+npm run dev      # http://localhost:5173
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Other scripts: `npm run build` (production build to `dist/`), `npm run preview`
+(serve the build), `npm run lint`.
 
-## Expanding the ESLint configuration
+## Editing content
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Content is separated from presentation, so most updates are one-file edits under
+`src/data/` and need no component changes.
+
+| File | What it holds |
+| --- | --- |
+| `src/data/about.js` | Name, tagline, email and social links, resume path, shared `links` map, and the bio paragraphs |
+| `src/data/timeline.js` | Education and work entries for the Experience section |
+| `src/data/projects.js` | Project cards |
+| `src/data/skills.js` | Skill categories |
+| `src/theme.js` | Colour tokens, plus section order and visibility |
+
+### Inline links
+
+`bio` paragraphs and project `subtitle` fields support Markdown-style links:
+
+```js
+`Master's student at [Carnegie Mellon University](${links.cmu}).`
+```
+
+`src/components/RichText.jsx` renders these, so URLs stay in the data files
+instead of the JSX. Reusable URLs live in the `links` object in `about.js`.
+
+### Timeline ordering
+
+Entries sort newest-first by their `start` key (`'YYYY-MM'`), so array position
+in the file does not matter. Entries with `type: 'education'` render as larger
+milestone nodes; everything else is a role. Optional per-entry fields:
+
+- `organizationUrl` — links the organisation name
+- `advisor: { name, url }` — renders an "Advised by" line
+- `instructors: [{ name, url }]` — renders an "Instructor(s)" line
+
+### Sections
+
+`sectionConfig` in `src/theme.js` controls which sections appear and in what
+order. Setting `enabled: false` hides a section and removes it from the navbar.
+
+### Assets
+
+Files in `public/` are served from the site root — the resume is `public/akshara.pdf`,
+referenced as `/akshara.pdf` via `personal.resumeUrl`.
+
+## Deploying
+
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site
+and publishes `dist/` to GitHub Pages. No manual deploy step.
