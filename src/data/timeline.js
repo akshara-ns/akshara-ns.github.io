@@ -4,7 +4,7 @@
 //  Types: 'education' | 'work' | 'research'
 //
 //  organizationUrl → organization name becomes a link
-//  advisor         → { name, url } rendered under the org
+//  advisors        → [{ name, url }] rendered as "Advised by"
 //  instructors     → [{ name, url }] for TA roles
 // ─────────────────────────────────────────────
 
@@ -75,7 +75,10 @@ export const timeline = [
     subtitle: 'GPA: 3.9/4.0',
     bullets: [
       'Focus areas: Machine Learning, Agentic AI, Human-AI Interaction.',
-      'Coursework: Intro to ML, Deep Learning, Human-AI Interaction, Trustworthy AI, AI Agents, LLM Systems.',
+      'Spring 2025: Introduction to Machine Learning (18-661), Estimation, Detection, and Learning (18-752), Human-AI Interaction (05-618).',
+      'Fall 2025: Introduction to Deep Learning (11-785), Trustworthy AI (24-784), Entrepreneurial Engineering Project (18-655).',
+      'Spring 2026: LLM Systems (11-868), AI Agents for Engineering (24-880), Sports Technology (18-738).',
+      'Fall 2026 (in progress): Building Reliable Distributed Systems (18-749), Designing and Deploying AI/ML Systems (24-679), GenAI for Biomedicine (11-781).',
     ],
   },
   {
@@ -142,7 +145,10 @@ export const timeline = [
     title: 'Research Communication Mentor · MMC Lab',
     organization: 'Shibaura Institute of Technology',
     organizationUrl: links.sit,
-    advisor: { name: 'Prof. Eiji Kamioka', url: links.kamioka },
+    advisors: [
+      { name: 'Prof. Eiji Kamioka', url: links.kamioka },
+      { name: 'Prof. Phan Xuan Tan', url: links.phanXuanTan },
+    ],
     location: 'Tokyo, Japan',
     period: 'Sep 2021 – Aug 2024',
     bullets: [

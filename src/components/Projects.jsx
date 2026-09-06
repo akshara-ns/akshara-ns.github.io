@@ -61,12 +61,17 @@ export default function Projects() {
                 <RichText text={project.subtitle} />
               </p>
             )}
-            {project.advisor && (
+            {project.advisors?.length > 0 && (
               <p className="text-xs text-navy/40 mb-2">
                 Advised by{' '}
-                <a href={project.advisor.url} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                  {project.advisor.name}
-                </a>
+                {project.advisors.map((person, i) => (
+                  <span key={person.name}>
+                    {i > 0 && ', '}
+                    <a href={person.url} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                      {person.name}
+                    </a>
+                  </span>
+                ))}
               </p>
             )}
             <p className="text-sm text-navy/60 leading-relaxed mb-4 flex-1">

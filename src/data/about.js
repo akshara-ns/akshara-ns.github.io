@@ -27,6 +27,7 @@ export const links = {
   idl: 'https://deeplearning.cs.cmu.edu/',
   maartenSap: 'https://maartensap.com/',
   kamioka: 'http://www.kamioka.ice.shibaura-it.ac.jp/profile-e.html',
+  phanXuanTan: 'https://sites.google.com/view/phanxuantan/home',
 }
 
 export const about = {
@@ -34,7 +35,7 @@ export const about = {
   bio: [
     `Master's student in Electrical and Computer Engineering at [Carnegie Mellon University](${links.cmu}), focused on machine learning, agentic AI, and human-AI interaction: LLM agents that plan, replan, and explain their steps, and the evaluation infrastructure that tests whether they hold up. I'm working as an AI Safety Researcher at Shiba AI. Previously Computer Engineering at [Shibaura Institute of Technology](${links.sit}), Tokyo.`,
 
-    `At [Prof. Eiji Kamioka](${links.kamioka})'s [Mobile Multimedia Communications Laboratory](${links.mmcLab}) I built wearable navigation for visually impaired pedestrians: YOLO object detection and monocular depth estimation on a Jetson Nano, converted into audio guidance calibrated to each user's stride, not a population average. Growing up in Japan, surrounded by infrastructure built to be usable by everyone, set that priority. A system that performs well on average is no use to the person it fails.`,
+    `At the [Mobile Multimedia Communications Laboratory](${links.mmcLab}), advised by [Prof. Eiji Kamioka](${links.kamioka}) and [Prof. Phan Xuan Tan](${links.phanXuanTan}), I built wearable navigation for visually impaired pedestrians: YOLO object detection and monocular depth estimation on a Jetson Nano, converted into audio guidance calibrated to each user's stride, not a population average. Growing up in Japan, surrounded by infrastructure built to be usable by everyone, set that priority. A system that performs well on average is no use to the person it fails.`,
 
     `Now: orientation-aware LLM planning at [Prof. Yorie Nakahira](${links.nakahira})'s [Control & Learning Group](${links.controlLearning}), and LLM evaluation built on contamination audits, red-teaming, and controlled experiments. I TA [Introduction to Deep Learning (11-785)](${links.idl}) for [Prof. Bhiksha Raj](${links.bhikshaRaj}), previously the Data Science Seminar (11-631) for [Prof. Maarten Sap](${links.maartenSap}). What interests me: the distance between an agent that demos well and one people can depend on.`,
   ],

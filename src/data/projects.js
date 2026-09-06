@@ -4,7 +4,7 @@
 //  Types: 'research' | 'academic' | 'independent'
 //
 //  subtitle supports inline [label](url) links
-//  advisor  → { name, url } shown under the subtitle
+//  advisors → [{ name, url }] shown under the subtitle
 // ─────────────────────────────────────────────
 
 import { links } from './about'
@@ -14,7 +14,10 @@ export const projects = [
     id: 6,
     title: 'Personalized Wearable Assistive Navigation',
     subtitle: `Honors Thesis · [Mobile Multimedia Communications Laboratory](${links.mmcLab}) · [Shibaura Institute of Technology](${links.sit})`,
-    advisor: { name: 'Prof. Eiji Kamioka', url: links.kamioka },
+    advisors: [
+      { name: 'Prof. Eiji Kamioka', url: links.kamioka },
+      { name: 'Prof. Phan Xuan Tan', url: links.phanXuanTan },
+    ],
     description: 'Designed and prototyped an edge-device wearable navigation system for visually impaired pedestrians using real-time video, YOLOv5 object detection, depth estimation, and personalized step-based audio guidance. Deployed on Jetson Nano and validated in controlled trials, then presented at WSSE 2024, where the work received the Best Paper Award.',
     type: 'research',
     tags: ['YOLOv5', 'Depth Estimation', 'Jetson Nano', 'Assistive Tech', 'Edge Deployment'],
@@ -26,7 +29,7 @@ export const projects = [
     id: 5,
     title: 'Explainable LLM-Guided Navigation',
     subtitle: `[Control & Learning Group](${links.controlLearning}) · [Carnegie Mellon University](${links.cmu})`,
-    advisor: { name: 'Prof. Yorie Nakahira', url: links.nakahira },
+    advisors: [{ name: 'Prof. Yorie Nakahira', url: links.nakahira }],
     description: 'Built an LLM-guided MiniGrid controller for spatial reasoning and action planning, combining iterative replanning, orientation-aware action conversion, and 50 sampled MPC rollouts per decision. Step-level logging made each choice inspectable rather than opaque, and the controller cleared wall-obstacle navigation in 48 steps at a reward of 0.867 on its first attempt.',
     type: 'research',
     tags: ['LLM Planning', 'MiniGrid', 'MPC', 'Replanning', 'Spatial Reasoning', 'Interpretability'],
@@ -59,7 +62,7 @@ export const projects = [
   {
     id: 9,
     title: 'nocaps: Multi-Camera Sports Broadcast',
-    subtitle: `Sports Technology · [Carnegie Mellon University](${links.cmu})`,
+    subtitle: `Sports Technology (18-738) · [Carnegie Mellon University](${links.cmu})`,
     description: 'Built a mobile broadcast system that turns commodity smartphones into a synchronized multi-camera rig: operators join a match by code, choose a camera position, and stream over WebRTC through a Node.js and Socket.IO signaling relay for viewers to watch live. Paired it with a billiards event-detection pipeline in OpenCV that tracks balls across frames and cuts highlight clips around each pocketing event.',
     type: 'academic',
     tags: ['React Native', 'WebRTC', 'Socket.IO', 'Node.js', 'OpenCV', 'Real-Time Streaming'],

@@ -28,10 +28,10 @@ function OrgLine({ entry }) {
 }
 
 function Credits({ entry }) {
-  const people = entry.instructors ?? (entry.advisor ? [entry.advisor] : null)
-  if (!people) return null
+  const people = entry.instructors ?? entry.advisors
+  if (!people?.length) return null
   const label = entry.instructors
-    ? `${entry.instructors.length > 1 ? 'Instructors' : 'Instructor'}: `
+    ? `${people.length > 1 ? 'Instructors' : 'Instructor'}: `
     : 'Advised by '
 
   return (
