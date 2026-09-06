@@ -25,7 +25,7 @@ export const timeline = [
     period: 'May 2026 – Aug 2026',
     bullets: [
       'Owned an evaluation and benchmarking program end to end for an LLM agent orchestration platform.',
-      'Built containerized evaluation harnesses and task suites over Terminal-Bench and SWE-Bench style agent tasks, comparing candidates through blinded LLM-judge panels, token-matched trials, and controlled A/B experiments.',
+      'Built containerized evaluation harnesses and task suites spanning Terminal-Bench, SWE-Bench, ContextBench, and DeepSWE agent tasks, comparing candidates through blinded LLM-judge panels, token-matched trials, and controlled A/B experiments.',
       'Benchmarked curated context packs against auto-generated baselines, reaching higher retrieval recall from a substantially smaller context, and ran prompt-injection red-teaming to test robustness.',
     ],
   },

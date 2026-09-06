@@ -14,7 +14,7 @@ export const skills = [
   },
   {
     category: 'Evaluation',
-    items: ['Benchmarking', 'LLM-as-Judge Panels', 'Grader Validation', 'Contamination Audits', 'Terminal-Bench', 'SWE-Bench', 'DeepSWE', 'Red-Teaming', 'A/B Experiments'],
+    items: ['Benchmarking', 'LLM-as-Judge Panels', 'Grader Validation', 'Contamination Audits', 'Terminal-Bench', 'SWE-Bench', 'ContextBench', 'DeepSWE', 'Red-Teaming', 'A/B Experiments'],
   },
   {
     category: 'Web & Design',

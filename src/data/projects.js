@@ -59,7 +59,7 @@ export const projects = [
   {
     id: 9,
     title: 'nocaps: Multi-Camera Sports Broadcast',
-    subtitle: `[Carnegie Mellon University](${links.cmu})`,
+    subtitle: `Sports Technology · [Carnegie Mellon University](${links.cmu})`,
     description: 'Built a mobile broadcast system that turns commodity smartphones into a synchronized multi-camera rig: operators join a match by code, choose a camera position, and stream over WebRTC through a Node.js and Socket.IO signaling relay for viewers to watch live. Paired it with a billiards event-detection pipeline in OpenCV that tracks balls across frames and cuts highlight clips around each pocketing event.',
     type: 'academic',
     tags: ['React Native', 'WebRTC', 'Socket.IO', 'Node.js', 'OpenCV', 'Real-Time Streaming'],
