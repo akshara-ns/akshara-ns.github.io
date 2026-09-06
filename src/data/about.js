@@ -32,7 +32,7 @@ export const links = {
 export const about = {
   // rich text: [label](url) becomes a link
   bio: [
-    `Master's student in Electrical and Computer Engineering at [Carnegie Mellon University](${links.cmu}), working on machine learning, agentic AI, and human-AI interaction: LLM agents that plan, replan, and explain their steps, and the evaluation infrastructure that tests whether they hold up. Previously Computer Engineering at [Shibaura Institute of Technology](${links.sit}), Tokyo.`,
+    `Master's student in Electrical and Computer Engineering at [Carnegie Mellon University](${links.cmu}), focused on machine learning, agentic AI, and human-AI interaction: LLM agents that plan, replan, and explain their steps, and the evaluation infrastructure that tests whether they hold up. I'm working as an AI Safety Researcher at Shiba AI. Previously Computer Engineering at [Shibaura Institute of Technology](${links.sit}), Tokyo.`,
 
     `At [Prof. Eiji Kamioka](${links.kamioka})'s [Mobile Multimedia Communications Laboratory](${links.mmcLab}) I built wearable navigation for visually impaired pedestrians: YOLO object detection and monocular depth estimation on a Jetson Nano, converted into audio guidance calibrated to each user's stride, not a population average. Growing up in Japan, surrounded by infrastructure built to be usable by everyone, set that priority. A system that performs well on average is no use to the person it fails.`,
 
