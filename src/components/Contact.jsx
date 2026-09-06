@@ -8,7 +8,7 @@ export default function Contact() {
         Let's connect<span className="accent-dot" />
       </h2>
       <p className="text-navy/50 max-w-xl mb-12 leading-relaxed">
-        Open to research collaborations, project ideas, and conversations about ML and human-centered AI —
+        Open to research collaborations, project ideas, and conversations about ML and human-centered AI.
         I'd love to hear from you.
       </p>
 

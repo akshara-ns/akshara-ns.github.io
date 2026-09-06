@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import About from './components/About'
 import Skills from './components/Skills'
 import Timeline from './components/Timeline'
 import Projects from './components/Projects'
@@ -12,7 +11,6 @@ import { sectionConfig } from './theme'
 // Map section IDs to components
 const sectionComponents = {
   hero:     <Hero />,
-  about:    <About />,
   skills:   <Skills />,
   timeline: <Timeline />,
   projects: <Projects />,

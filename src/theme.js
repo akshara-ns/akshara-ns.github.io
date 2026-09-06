@@ -27,7 +27,6 @@ export const theme = {
 
 export const sectionConfig = [
   { id: 'hero',       enabled: true },
-  { id: 'about',      enabled: true },
   { id: 'skills',     enabled: true },
   { id: 'timeline',   enabled: true },
   { id: 'projects',   enabled: true },

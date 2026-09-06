@@ -3,7 +3,6 @@ import { personal } from '../data/about'
 import { sectionConfig } from '../theme'
 
 const navLabels = {
-  about: 'About',
   skills: 'Skills',
   timeline: 'Experience',
   projects: 'Projects',

@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { projects } from '../data/projects'
+import RichText, { linkClass } from './RichText'
 
 const filters = ['all', 'research', 'academic', 'independent']
 
 const typeColors = {
   research:    'bg-lavender-dark/10 text-lavender-deeper',
-  academic:    'bg-sky/20 text-sky-700',
+  academic:    'bg-sky/20 text-navy/70',
   independent: 'bg-lavender/20 text-lavender-dark',
 }
 
@@ -56,7 +57,17 @@ export default function Projects() {
               {project.title}
             </h3>
             {project.subtitle && (
-              <p className="text-xs text-lavender-deeper mb-2">{project.subtitle}</p>
+              <p className="text-xs text-lavender-deeper mb-1">
+                <RichText text={project.subtitle} />
+              </p>
+            )}
+            {project.advisor && (
+              <p className="text-xs text-navy/40 mb-2">
+                Advised by{' '}
+                <a href={project.advisor.url} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                  {project.advisor.name}
+                </a>
+              </p>
             )}
             <p className="text-sm text-navy/60 leading-relaxed mb-4 flex-1">
               {project.description}
