@@ -22,6 +22,7 @@ export const links = {
   controlLearning: 'https://www.cmu.edu/ece/learning-control/',
   mmcLab: 'http://www.kamioka.ice.shibaura-it.ac.jp/index-e.html',
   jva: 'https://www.japanventureacademy.com/',
+  shibaAi: 'https://www.shiba-ai.jp/',
   nakahira: 'https://users.ece.cmu.edu/~ynakahir/',
   bhikshaRaj: 'https://www.cs.cmu.edu/~bhiksha/',
   idl: 'https://deeplearning.cs.cmu.edu/',
@@ -33,7 +34,7 @@ export const links = {
 export const about = {
   // rich text: [label](url) becomes a link
   bio: [
-    `Master's student in Electrical and Computer Engineering at [Carnegie Mellon University](${links.cmu}), focused on machine learning, agentic AI, and human-AI interaction: LLM agents that plan, replan, and explain their steps, and the evaluation infrastructure that tests whether they hold up. I'm working as an AI Safety Researcher at Shiba AI. Previously Computer Engineering at [Shibaura Institute of Technology](${links.sit}), Tokyo.`,
+    `Master's student in Electrical and Computer Engineering at [Carnegie Mellon University](${links.cmu}), focused on machine learning, agentic AI, and human-AI interaction: LLM agents that plan, replan, and explain their steps, and the evaluation infrastructure that tests whether they hold up. I'm working as an AI Safety Researcher at [Shiba AI](${links.shibaAi}). Previously Computer Engineering at [Shibaura Institute of Technology](${links.sit}), Tokyo.`,
 
     `At the [Mobile Multimedia Communications Laboratory](${links.mmcLab}), advised by [Prof. Eiji Kamioka](${links.kamioka}) and [Prof. Phan Xuan Tan](${links.phanXuanTan}), I built wearable navigation for visually impaired pedestrians: YOLO object detection and monocular depth estimation on a Jetson Nano, converted into audio guidance calibrated to each user's stride, not a population average. Growing up in Japan, surrounded by infrastructure built to be usable by everyone, set that priority. A system that performs well on average is no use to the person it fails.`,
 

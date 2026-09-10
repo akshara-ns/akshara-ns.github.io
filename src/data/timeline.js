@@ -15,6 +15,18 @@ import { links } from './about'
 // `education` entries render as larger milestone nodes; everything else is a role.
 export const timeline = [
   {
+    id: 12,
+    start: '2026-05', // sort key, newest first
+    type: 'work',
+    title: 'AI Safety Researcher',
+    organization: 'Shiba AI',
+    organizationUrl: links.shibaAi,
+    period: 'May 2026 – Present',
+    bullets: [
+      'Research on AI safety and alignment. Details to follow once the work is published.',
+    ],
+  },
+  {
     id: 11,
     start: '2026-05', // sort key, newest first
     type: 'work',
