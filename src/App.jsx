@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Timeline from './components/Timeline'
 import Projects from './components/Projects'
+import Publications from './components/Publications'
 import BeyondWork from './components/BeyondWork'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -14,6 +15,7 @@ const sectionComponents = {
   skills:   <Skills />,
   timeline: <Timeline />,
   projects: <Projects />,
+  publications: <Publications />,
   beyond:   <BeyondWork />,
   contact:  <Contact />,
 }

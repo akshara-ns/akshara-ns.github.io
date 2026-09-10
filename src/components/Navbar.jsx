@@ -6,6 +6,7 @@ const navLabels = {
   skills: 'Skills',
   timeline: 'Experience',
   projects: 'Projects',
+  publications: 'Publications',
   beyond: 'Beyond Work',
   contact: 'Contact',
 }

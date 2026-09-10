@@ -30,6 +30,7 @@ export const sectionConfig = [
   { id: 'skills',     enabled: true },
   { id: 'timeline',   enabled: true },
   { id: 'projects',   enabled: true },
+  { id: 'publications', enabled: true },
   { id: 'beyond',     enabled: false },
   { id: 'contact',    enabled: true },
 ]
