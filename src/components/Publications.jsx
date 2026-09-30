@@ -23,7 +23,11 @@ export default function Publications() {
             <p className="mt-1.5 text-sm text-navy/50">
               {paper.venue}
               {paper.source && <span> · {paper.source}</span>}
-              {paper.note && <span className="text-lavender-deeper"> · {paper.note}</span>}
+              {paper.note && (
+                <span className={paper.highlight ? 'text-lavender-deeper' : undefined}>
+                  {' · '}{paper.note}
+                </span>
+              )}
             </p>
           </li>
         ))}
