@@ -10,7 +10,6 @@ export const publications = [
     venue: 'Preprint, September 2026',
     url: 'https://arxiv.org/abs/2609.35885',
     source: 'arXiv',
-    note: 'Under review at ICLR 2027',
   },
   {
     id: 1,
