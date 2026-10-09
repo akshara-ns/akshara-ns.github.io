@@ -92,7 +92,7 @@ export const timeline = [
       'Spring 2025: Introduction to Machine Learning (18-661), Estimation, Detection, and Learning (18-752), Human-AI Interaction (05-618).',
       'Fall 2025: Introduction to Deep Learning (11-785), Trustworthy AI (24-784), Entrepreneurial Engineering Project (18-655).',
       'Spring 2026: LLM Systems (11-868), AI Agents for Engineering (24-880), Sports Technology (18-738).',
-      'Fall 2026 (in progress): Building Reliable Distributed Systems (18-749), Designing and Deploying AI/ML Systems (24-679), GenAI for Biomedicine (11-781).',
+      'Fall 2026 (in progress): Building Reliable Distributed Systems (18-749), Designing & Prototyping AI Systems (24-679), GenAI for Biomedicine (11-781).',
     ],
   },
   {
