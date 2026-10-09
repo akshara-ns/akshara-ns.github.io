@@ -1,0 +1,7 @@
+# The site itself is fine to index.
+User-agent: *
+Allow: /
+
+# Keep the resume out of search results: it carries a phone number that
+# should reach people who deliberately download it, not search queries.
+Disallow: /akshara.pdf
