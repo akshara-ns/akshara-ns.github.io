@@ -19,11 +19,13 @@ export const timeline = [
     start: '2026-05', // sort key, newest first
     type: 'work',
     title: 'AI Safety Researcher',
+    subtitle: 'LLM Evaluation & Multi-Agent Systems',
     organization: 'Shiba AI',
     organizationUrl: links.shibaAi,
     period: 'May 2026 – Present',
     bullets: [
-      'Research on AI safety and alignment. Details to follow once the work is published.',
+      'Ran agent-panel experiments on collective consensus in multi-agent LLMs, covering 340 trials across six providers, varying reasoning effort and communication topology.',
+      'Built a paired-name audit of hiring bias in LLM decisions, measuring the effect of candidate names and evaluating mitigation strategies.',
     ],
   },
   {

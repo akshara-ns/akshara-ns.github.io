@@ -22,7 +22,7 @@ export const skills = [
   },
   {
     category: 'Tools & Systems',
-    items: ['Jupyter', 'Git', 'AWS (EC2/S3)', 'CUDA', 'Jetson Nano', 'Fly.io', 'Edge Deployment', 'Docker', 'Hugging Face', 'IoT / Embedded Systems'],
+    items: ['Jupyter', 'Git', 'AWS (EC2/S3)', 'CUDA', 'Linux / WSL2', 'Jetson Nano', 'Fly.io', 'Edge Deployment', 'Docker', 'Hugging Face', 'IoT / Embedded Systems'],
   },
   {
     category: 'Languages',

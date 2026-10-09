@@ -30,7 +30,7 @@ export const projects = [
     title: 'Explainable LLM-Guided Navigation',
     subtitle: `[Control & Learning Group](${links.controlLearning}) · [Carnegie Mellon University](${links.cmu})`,
     advisors: [{ name: 'Prof. Yorie Nakahira', url: links.nakahira }],
-    description: 'Built an LLM-guided MiniGrid controller for spatial reasoning and action planning, combining iterative replanning, orientation-aware action conversion, and 50 sampled MPC rollouts per decision. Step-level logging made each choice inspectable rather than opaque, and the controller cleared wall-obstacle navigation in 48 steps at a reward of 0.867 on its first attempt.',
+    description: 'Built an LLM-guided MiniGrid controller for spatial reasoning and action planning, combining iterative replanning, orientation-aware action conversion, and 50 sampled MPC rollouts per decision on GPT-4o. Step-level logging made each choice inspectable rather than opaque, and the controller cleared wall-obstacle navigation in 48 steps at a reward of 0.867 on its first attempt.',
     type: 'research',
     tags: ['LLM Planning', 'MiniGrid', 'MPC', 'Replanning', 'Spatial Reasoning', 'Interpretability'],
     github: null,
