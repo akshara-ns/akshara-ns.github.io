@@ -21,9 +21,10 @@ Content is separated from presentation, so most updates are one-file edits under
 
 | File | What it holds |
 | --- | --- |
-| `src/data/about.js` | Name, tagline, email and social links, resume path, shared `links` map, and the bio paragraphs |
+| `src/data/about.js` | Name, email and social links, resume path, shared `links` map, and the bio paragraphs |
 | `src/data/timeline.js` | Education and work entries for the Experience section |
 | `src/data/projects.js` | Project cards |
+| `src/data/publications.js` | Publications, newest first |
 | `src/data/skills.js` | Skill categories |
 | `src/theme.js` | Colour tokens, plus section order and visibility |
 
@@ -45,7 +46,7 @@ in the file does not matter. Entries with `type: 'education'` render as larger
 milestone nodes; everything else is a role. Optional per-entry fields:
 
 - `organizationUrl` — links the organisation name
-- `advisor: { name, url }` — renders an "Advised by" line
+- `advisors: [{ name, url }]` — renders an "Advised by" line
 - `instructors: [{ name, url }]` — renders an "Instructor(s)" line
 
 ### Sections

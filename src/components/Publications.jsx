@@ -1,3 +1,4 @@
+import { personal } from '../data/about'
 import { publications } from '../data/publications'
 import { linkClass } from './RichText'
 
@@ -17,6 +18,20 @@ export default function Publications() {
                 {paper.title}
               </a>
             </h3>
+
+            {/* Published author order, with my name picked out. */}
+            {paper.authors && (
+              <p className="mt-1.5 text-sm text-navy/60 leading-relaxed">
+                {paper.authors.map((author, i) => (
+                  <span key={author}>
+                    {i > 0 && ', '}
+                    {author === personal.name
+                      ? <span className="font-semibold text-navy">{author}</span>
+                      : author}
+                  </span>
+                ))}
+              </p>
+            )}
 
             {/* Muted, not accent-coloured: none of this line is clickable.
                 The venue already carries the year, so no separate year column. */}

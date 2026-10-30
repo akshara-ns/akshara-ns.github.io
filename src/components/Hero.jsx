@@ -40,10 +40,6 @@ export default function Hero() {
           N<span className="text-lavender">.</span>S<span className="text-lavender">.</span>Akshara
         </h1>
 
-        <h2 className="text-xl md:text-2xl text-navy/70 font-light leading-snug">
-          {personal.tagline}
-        </h2>
-
         <div className="mt-10 space-y-5">
           {about.bio.map((paragraph, i) => (
             <p key={i} className="text-navy/75 leading-relaxed">
