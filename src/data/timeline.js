@@ -24,7 +24,7 @@ export const timeline = [
     organizationUrl: links.shibaAi,
     period: 'May 2026 – Present',
     bullets: [
-      'Ran agent-panel experiments on collective consensus in panels of 50 LLM agents, covering 340 trials across six providers, varying reasoning effort and communication topology. Aggregate agreement alone hid locally ordered but globally fragmented states (under review at ICLR 2027).',
+      'Ran agent-panel experiments on collective consensus in panels of 50 LLM agents, covering 340 trials across six providers, varying reasoning effort and communication topology. Aggregate agreement alone hid locally ordered but globally fragmented states (arXiv preprint).',
       'Built a paired-name audit of gender bias in five frontier LLMs screening Japanese resumes, over 43,200 API calls. A gender-neutrality instruction did not reduce the bias, while removing the candidate name removed nearly all of it (ECML PKDD 2026).',
     ],
   },

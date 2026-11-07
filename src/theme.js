@@ -29,8 +29,8 @@ export const sectionConfig = [
   { id: 'hero',       enabled: true },
   { id: 'skills',     enabled: false },
   { id: 'timeline',   enabled: true },
-  { id: 'projects',   enabled: true },
   { id: 'publications', enabled: true },
+  { id: 'projects',   enabled: true },
   { id: 'beyond',     enabled: false },
   { id: 'contact',    enabled: true },
 ]

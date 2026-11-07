@@ -7,6 +7,7 @@ const PROFILE_PHOTO = 'profile.JPG'
 const socialLinks = [
   { label: 'GitHub', href: personal.github },
   { label: 'LinkedIn', href: personal.linkedin },
+  { label: 'Google Scholar', href: personal.scholar },
   { label: 'Email', href: personal.email && `mailto:${personal.email}` },
 ]
 
