@@ -48,6 +48,12 @@ milestone nodes; everything else is a role. Optional per-entry fields:
 - `organizationUrl` — links the organisation name
 - `advisors: [{ name, url }]` — renders an "Advised by" line
 - `instructors: [{ name, url }]` — renders an "Instructor(s)" line
+- `earlier: true` — moves the entry into the collapsed "Earlier roles" section
+
+### Project ordering
+
+Cards appear in `src/data/projects.js` order. The first six show by default
+(`SELECTED_COUNT` in `Projects.jsx`), and the rest sit behind "Show all".
 
 ### Sections
 

@@ -5,9 +5,8 @@ import { linkClass } from './RichText'
 export default function Publications() {
   return (
     <section id="publications" className="py-24 px-6 max-w-3xl mx-auto">
-      <p className="section-subheading">Publications</p>
       <h2 className="section-heading mb-12">
-        Published work<span className="accent-dot" />
+        Publications<span className="accent-dot" />
       </h2>
 
       <ol className="divide-y divide-navy/5">

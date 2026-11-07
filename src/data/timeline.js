@@ -6,6 +6,7 @@
 //  organizationUrl → organization name becomes a link
 //  advisors        → [{ name, url }] rendered as "Advised by"
 //  instructors     → [{ name, url }] for TA roles
+//  earlier         → true moves the entry into the collapsed "Earlier roles"
 // ─────────────────────────────────────────────
 
 import { links } from './about'
@@ -78,6 +79,21 @@ export const timeline = [
     ],
   },
   {
+    id: 13,
+    start: '2025-06', // sort key, newest first
+    type: 'research',
+    title: 'Research · Explainable LLM-Guided Navigation',
+    subtitle: 'Orientation-Aware Planning in MiniGrid',
+    organization: 'Control & Learning Group, Carnegie Mellon University',
+    organizationUrl: links.controlLearning,
+    advisors: [{ name: 'Prof. Yorie Nakahira', url: links.nakahira }],
+    location: 'Pittsburgh, PA',
+    period: 'Jun 2025 – Dec 2025',
+    bullets: [
+      'Built an LLM–MPC MiniGrid controller on GPT-4o with 50 sampled rollouts per step, solving obstacle navigation in 48 steps at 0.867 reward.',
+    ],
+  },
+  {
     id: 1,
     start: '2025-01', // sort key, newest first
     type: 'education',
@@ -112,6 +128,7 @@ export const timeline = [
   },
   {
     id: 7,
+    earlier: true,
     start: '2024-02', // sort key, newest first
     type: 'work',
     title: 'Teaching Assistant · SIT IoT-Robotics Workshop',
@@ -126,6 +143,7 @@ export const timeline = [
   },
   {
     id: 5,
+    earlier: true,
     start: '2023-08', // sort key, newest first
     type: 'work',
     title: 'Teaching Assistant · International IoT-Robotics Workshop',
@@ -140,6 +158,7 @@ export const timeline = [
   },
   {
     id: 10,
+    earlier: true,
     start: '2021-09', // sort key, newest first
     type: 'work',
     title: 'Research Communication Mentor · MMC Lab',
@@ -159,6 +178,7 @@ export const timeline = [
   },
   {
     id: 9,
+    earlier: true,
     start: '2021-09', // sort key, newest first
     type: 'work',
     title: 'Students Association · SNS Team',
@@ -183,7 +203,24 @@ export const timeline = [
     subtitle: 'GPA: 3.9/4.0',
     bullets: [
       'Presidential Award of Excellence, 2024.',
-      'Honors thesis: wearable assistive navigation for visually impaired pedestrians, awarded Best Paper at WSSE 2024.',
+    ],
+  },
+  {
+    id: 14,
+    start: '2020-10', // sort key, newest first
+    type: 'research',
+    title: 'Honors Thesis · Personalized Wearable Assistive Navigation',
+    organization: 'Mobile Multimedia Communications Laboratory, Shibaura Institute of Technology',
+    organizationUrl: links.mmcLab,
+    advisors: [
+      { name: 'Prof. Eiji Kamioka', url: links.kamioka },
+      { name: 'Prof. Phan Xuan Tan', url: links.phanXuanTan },
+    ],
+    location: 'Tokyo, Japan',
+    period: 'Oct 2020 – Sep 2024',
+    bullets: [
+      'Designed and prototyped a Jetson Nano wearable navigation system for visually impaired pedestrians, using YOLO object detection and depth estimation to localize hazards and generate personalized step-based audio guidance.',
+      'Evaluated the system in a 20-participant study and published the work at WSSE 2024, where it received the Best Paper Award.',
     ],
   },
 ]

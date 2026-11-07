@@ -65,19 +65,32 @@ function Bullets({ entry }) {
   )
 }
 
+const railClass = 'ml-2 space-y-9 border-l border-lavender/25 pl-8 sm:ml-3 sm:pl-10'
+
 export default function Timeline() {
   const entries = [...timeline].sort(byRecency)
+  const earlier = entries.filter(entry => entry.earlier)
 
   return (
     <section id="timeline" className="py-24 px-6 max-w-3xl mx-auto">
-      <p className="section-subheading">Experience</p>
       <h2 className="section-heading mb-12">
-        My journey<span className="accent-dot" />
+        Experience<span className="accent-dot" />
       </h2>
 
-      <ol className="ml-2 space-y-9 border-l border-lavender/25 pl-8 sm:ml-3 sm:pl-10">
-        {timelineItems(entries)}
+      <ol className={railClass}>
+        {timelineItems(entries.filter(entry => !entry.earlier))}
       </ol>
+
+      {earlier.length > 0 && (
+        <details className="mt-9">
+          <summary className="cursor-pointer text-sm text-navy/60 hover:text-navy transition-colors">
+            Earlier roles ({earlier.length})
+          </summary>
+          <ol className={`mt-6 ${railClass}`}>
+            {timelineItems(earlier)}
+          </ol>
+        </details>
+      )}
     </section>
   )
 }

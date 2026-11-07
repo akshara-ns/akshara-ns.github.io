@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { projects } from '../data/projects'
 import RichText, { linkClass } from './RichText'
 
-const filters = ['all', 'research', 'academic', 'independent']
+// Cards shown before "Show all"; projects.js order decides which ones.
+const SELECTED_COUNT = 6
 
 const typeColors = {
   research:    'bg-lavender-dark/10 text-lavender-deeper',
@@ -11,37 +12,19 @@ const typeColors = {
 }
 
 export default function Projects() {
-  const [active, setActive] = useState('all')
+  const [showAll, setShowAll] = useState(false)
 
-  const filtered = active === 'all' ? projects : projects.filter(p => p.type === active)
+  const visible = showAll ? projects : projects.slice(0, SELECTED_COUNT)
 
   return (
     <section id="projects" className="py-24 px-6 max-w-5xl mx-auto">
-      <p className="section-subheading">Projects</p>
-      <h2 className="section-heading mb-6">
-        Things I've built<span className="accent-dot" />
+      <h2 className="section-heading mb-12">
+        Selected Projects<span className="accent-dot" />
       </h2>
-
-      {/* Filter tabs */}
-      <div className="flex flex-wrap gap-2 mb-10">
-        {filters.map(f => (
-          <button
-            key={f}
-            onClick={() => setActive(f)}
-            className={`px-4 py-1.5 rounded-full text-sm capitalize transition-colors ${
-              active === f
-                ? 'bg-navy text-background'
-                : 'border border-navy/20 text-navy/50 hover:border-navy/40 hover:text-navy'
-            }`}
-          >
-            {f}
-          </button>
-        ))}
-      </div>
 
       {/* Project grid */}
       <div className="grid sm:grid-cols-2 gap-6">
-        {filtered.map(project => (
+        {visible.map(project => (
           <div
             key={project.id}
             className="group bg-white/60 border border-lavender/20 rounded-2xl p-6 hover:border-lavender/50 hover:shadow-sm transition-all flex flex-col"
@@ -116,6 +99,16 @@ export default function Projects() {
           </div>
         ))}
       </div>
+
+      {projects.length > SELECTED_COUNT && (
+        <button
+          onClick={() => setShowAll(!showAll)}
+          aria-expanded={showAll}
+          className="mt-8 px-4 py-1.5 rounded-full text-sm border border-navy/20 text-navy/60 hover:border-navy/40 hover:text-navy transition-colors"
+        >
+          {showAll ? 'Show fewer' : `Show all ${projects.length} projects`}
+        </button>
+      )}
     </section>
   )
 }

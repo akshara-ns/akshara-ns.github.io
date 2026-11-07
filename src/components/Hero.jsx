@@ -4,7 +4,8 @@ import RichText from './RichText'
 // Drop your photo in /public/ and set this to the filename, e.g. 'profile.jpg'
 const PROFILE_PHOTO = 'profile.JPG'
 
-const socialLinks = [
+const profileLinks = [
+  { label: 'Resume', href: personal.resumeUrl },
   { label: 'GitHub', href: personal.github },
   { label: 'LinkedIn', href: personal.linkedin },
   { label: 'Google Scholar', href: personal.scholar },
@@ -41,6 +42,20 @@ export default function Hero() {
           N<span className="text-lavender">.</span>S<span className="text-lavender">.</span>Akshara
         </h1>
 
+        <div className="flex flex-wrap gap-x-5 gap-y-2">
+          {profileLinks.filter(link => link.href).map(link => (
+            <a
+              key={link.label}
+              href={link.href}
+              target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+              rel="noopener noreferrer"
+              className="text-navy/60 hover:text-navy transition-colors text-sm"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+
         <div className="mt-10 space-y-5">
           {about.bio.map((paragraph, i) => (
             <p key={i} className="text-navy/75 leading-relaxed">
@@ -62,30 +77,6 @@ export default function Hero() {
           >
             Get in Touch
           </a>
-          {personal.resumeUrl && (
-            <a
-              href={personal.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 border border-lavender/50 text-lavender-dark rounded-full text-sm font-medium hover:bg-lavender/10 transition-colors"
-            >
-              Resume ↗
-            </a>
-          )}
-        </div>
-
-        <div className="mt-8 flex gap-5">
-          {socialLinks.filter(link => link.href).map(link => (
-            <a
-              key={link.label}
-              href={link.href}
-              target={link.href.startsWith('mailto:') ? undefined : '_blank'}
-              rel="noopener noreferrer"
-              className="text-navy/40 hover:text-navy transition-colors text-sm"
-            >
-              {link.label}
-            </a>
-          ))}
         </div>
       </div>
     </section>
