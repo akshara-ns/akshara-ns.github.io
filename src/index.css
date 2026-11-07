@@ -34,4 +34,9 @@
   .accent-dot {
     @apply inline-block w-2 h-2 rounded-full bg-lavender ml-1 mb-1;
   }
+
+  /* Shared by the controls that reveal more content. */
+  .reveal-button {
+    @apply inline-flex items-center gap-2 cursor-pointer rounded-full border border-lavender-dark/50 bg-lavender/15 px-5 py-2.5 text-sm font-medium text-navy hover:border-lavender-dark hover:bg-lavender/30 transition-colors;
+  }
 }

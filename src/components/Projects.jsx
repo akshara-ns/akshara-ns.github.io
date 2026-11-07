@@ -104,9 +104,10 @@ export default function Projects() {
         <button
           onClick={() => setShowAll(!showAll)}
           aria-expanded={showAll}
-          className="mt-8 px-4 py-1.5 rounded-full text-sm border border-navy/20 text-navy/60 hover:border-navy/40 hover:text-navy transition-colors"
+          className="reveal-button mt-8"
         >
           {showAll ? 'Show fewer' : `Show all ${projects.length} projects`}
+          <span aria-hidden="true" className={`transition-transform ${showAll ? 'rotate-180' : ''}`}>▾</span>
         </button>
       )}
     </section>

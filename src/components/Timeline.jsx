@@ -82,9 +82,11 @@ export default function Timeline() {
       </ol>
 
       {earlier.length > 0 && (
-        <details className="mt-9">
-          <summary className="cursor-pointer text-sm text-navy/60 hover:text-navy transition-colors">
-            Earlier roles ({earlier.length})
+        <details className="group mt-10">
+          <summary className="reveal-button list-none [&::-webkit-details-marker]:hidden">
+            <span className="group-open:hidden">Show {earlier.length} earlier roles</span>
+            <span className="hidden group-open:inline">Hide earlier roles</span>
+            <span aria-hidden="true" className="transition-transform group-open:rotate-180">▾</span>
           </summary>
           <ol className={`mt-6 ${railClass}`}>
             {timelineItems(earlier)}
