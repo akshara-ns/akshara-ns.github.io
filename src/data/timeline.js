@@ -139,20 +139,6 @@ export const timeline = [
     ],
   },
   {
-    id: 8,
-    start: '2021-10', // sort key, newest first
-    type: 'work',
-    title: 'Teaching Assistant · Calculus',
-    organization: 'Shibaura Institute of Technology',
-    organizationUrl: links.sit,
-    location: 'Tokyo, Japan',
-    period: 'Oct 2021 – Jan 2022',
-    bullets: [
-      'Provided tutoring on core calculus topics including continuity, derivatives, and integration.',
-      'Helped students apply concepts to problem-solving like optimization and curve sketching, and supported mastery of advanced integration techniques.',
-    ],
-  },
-  {
     id: 10,
     start: '2021-09', // sort key, newest first
     type: 'work',
